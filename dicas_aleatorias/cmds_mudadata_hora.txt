@@ -1,0 +1,54 @@
+DATA E HORA
+console de um servidor VMWARE:
+entre como root
+esxcli hardware clock set -d 02 -H 08 -m 40 -M 04 -y 2015
+esxcli system time set -d 02 -H 08 -m 40 -M 04 -y 2015
+
+se preferir somente horas:
+esxcli hardware clock set -H 14 m 32
+esxcli system time set -H 14 -m 34
+
+
+nos linux como root:
+date -s "02 apr 2015 12:10:00"
+date -s "18 feb 2015 12:10:00"
+date -s "18 feb 2015 12:10:00"
+date -s "18 feb 2015 12:10:00"
+date -s "14:32:00"
+obs: calendario americano jan feb mar apr may jun jul aug sep oct nov dec
+
+nos windows caso quiser:
+Date 18-02-2015
+Time 12:01
+
+-----------------------------------------------------------
+
+
+
+informacoes adicionais de vmware:
+
+Usage: esxcli system time set [cmd options]
+Description:
+set                   Set the system clock time. Any missing parameters will default to the current time
+Cmd options:
+-d|--day=<long>       Day
+-H|--hour=<long>      Hour
+-m|--min=<long>       Minute
+-M|--month=<long>     Month
+-s|--sec=<long>       Second
+-y|--year=<long>      Year
+
+So, to set the system time to 10th April 2014, 10:18 (am):
+
+~ # esxcli system time set -d 10 -H 10 -m 18 -M 04 -y 2014
+
+Also, make sure that we also set the hardware clock time as the system time will revert to this on a reboot:
+
+~ # esxcli hardware clock set -d 10 -H 10 -m 18 -M 04 -y 2014     <- sets the hardware clock to 10th April 2014, 10:18 (am)
+
+To check the hardware and system time we can use the following commands:
+
+esxcli hardware clock get
+esxcli system time get
+
+Job done! Now move on to setting the time automatically using NTP.

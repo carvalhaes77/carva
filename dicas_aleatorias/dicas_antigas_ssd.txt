@@ -1,0 +1,11 @@
+-desativar desfragmentacao , nao se usa em dispositivo eletronico, apenas magnetico (hd)
+-nao limpar area vaia pois pode diminuir vida util do SSD -usa-se somente no HD
+-TRIM retarda gravação de arquivo novo, pois reserva o espaço mesmo apagado. Logo desative, cheque antes com 
+fsutil behavior query DisableDeleteNotify (se retonrar 0 esta ativado)
+para desativar fsutil behavior set disabledeletenotify 1
+-disable prefetch
+-disable indexing
+-disable hibernation
+-disable scheduled defrag
+-disable pagefile ou mova para HDD ou RAMDISK
+-evite standby

@@ -1,0 +1,5 @@
+como alterar C:\Users\[seu profile aqui]\.jupyter\jupyter_notebook_config.py --nao deu certo, testei abaixo atalho do navegador e foi:
+
+atalho exemplo = C:\Anaconda\python.exe C:\Anaconda\cwp.py C:\Anaconda C:\Anaconda\python.exe C:\Anaconda\Scripts\jupyter-notebook-script.py "C:\Python\area_trabalho\/"
+
+iniciar em = C:\Python\area_trabalho\

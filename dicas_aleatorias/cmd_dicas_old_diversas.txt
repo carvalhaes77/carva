@@ -1,0 +1,55 @@
+Detalhes relevantes ao manipular dados coletados msdos:
+
+1)primeiro, limpe quaisquer formato que copiar de outros tipos de documentos, colando no BLOCO DE NOTAS. Faz toda diferença se nao quiser tabelas e sugeiras de comandos de outros documentos
+2)no notepad++ existem opcoes importantes em menu EDITAR que limpa espaço, converte minuscula, etc
+3)localizar e substituir;
+	exemplo, importei emails separados em linha atraves de virtulas, se improtar isto para excel nao adianta pois ou ele deixa na mesma celular tudo ou ela vai quebrar por coluna dependendo da maneira que vc importar
+	logo sugiro localizar todas virgulas via WORD substituir por QUEBRA DE LINHA
+	depois basta abrir com excel e duplicar coluna, assim vc exporta pra csv separado por ;
+	com notepad++ localiza; e substitua por ,
+	finalmente importe no outlook
+	programinha outport exporta vcard separadamente, dentro da pasta contatos ficam diversos, para unificar va no msdos e type *.vcf >> tudo.vcf
+	alternativa exemplo COPY /B arq1.001+arq2.002+arq3.003 arquivo.rar	
+	
+	*util; quero limpar todas linhs que comecem com REV mas tem codigo afrente que muda a cada linha...como excluir cada?
+	localizar marcando linhas, depois menu localizar, marcadores, limpar linhas marcadas
+
+	desejavel; tratar tudo apos @ e antes de quebra linha...apagar por exemplo...tem como? *sim, ajuda se substituir por ; e colar excel que detecta separando tudo apos ; para coluna...pronto
+
+
+
+ELEVANDO PRIVILEGIOS CMD: exemplos
+runas /user:NOMEMAQUINA\administrator cmd ou nomedominio\nome
+runas /user:dominioX\administrador "mmc %windir%\system32\services.msc"
+runas /user:dominioY\admin "mmc %windir%\system32\compmgmt.msc"
+runas /user:seuemail@outlook.com notepad "users\seuprofile\doc\teste.txt"
+runas /user:radiumcheckup\admin "cmd"
+
+
+elevando privilegios de uma maquina remota de dominio diferente da maquina destino:
+runas /env /netonly /user:adominio\admin "cmd \\10.1.150.200"
+***na sequencia abre o prompt do CMD executando qualquer coisa que da sua maquina, se tiver acesso remoto no destino (a compattibildiade) fica correto sem dar acesso negado
+exemplo: "mmc %windir%\system32\services.msc" e de la coloca acesso remoto ip destino
+tasklist /S 10.1.150.200
+
+
+APROPRIANDO DE ARQUIVOS VIA CMD COM ADMIN
+1)acesso ao MSDOS com privilegio elevado
+(ou clica com a direita e executar como administrador, ou executar com usuario diferente e colocar, ou em linha digite runas com devidos parametros)
+
+2)cacls "CSC" /GRANT Todos:F /T
+
+
+OUTROS:
+Invoke-Command -ComputerName 10.1.150.200 {Stop-Process -name "AlgumAplicativo.exe"}
+
+winrm.cmd (pesquisar)
+
+
+---------------------------------------
+PROBLEMA ESPAÇO - PASTA OCULTA CSC DENTRO DO WINDOWS
+desativar sincronizacao offline
+entrar como admin no prompt
+apoderar-se dos arquivos
+rd csc /q/s
+reativar sincronizacao offline

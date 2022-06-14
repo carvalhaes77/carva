@@ -1,0 +1,90 @@
+compmgmt.msc
+
+Gerenciamento de conta de usuário
+ID	Mensagem
+4720	Uma conta de usuário foi criada.
+4722	Uma conta de usuário foi habilitada.
+4723	Foi feita uma tentativa de alterar a senha da conta.
+4724	Foi feita uma tentativa de redefinir a senha da conta.
+4725	Uma conta de usuário foi desabilitada.
+4726	Uma conta de usuário foi excluída.
+4738	Uma conta de usuário foi alterada.
+4740	Uma conta de usuário foi bloqueada.
+4765	Histórico SID foi adicionado a uma conta.
+4766	Falha ao tentar adicionar o histórico SID para uma conta.
+4767	Uma conta de usuário foi desbloqueada.
+4780	A ACL foi definida em contas que são membros de grupos de administradores.
+4781	O nome de uma conta foi alterado:
+4794	Foi feita uma tentativa de definir o modo de restauração de serviços de diretório.
+5376	Credenciais do Gerenciador de credenciais foram feitas o backup.
+5377	Credenciais do Gerenciador de credenciais foram restauradas a partir de um backup.
+4800	A estação de trabalho foi bloqueada.
+4801	A estação de trabalho foi desbloqueada.
+
+
+Eventos de logon de conta	Descrição
+4624	auditoria ok
+4625	Nome de usuário desconhecido ou senha incorreta.
+
+4634	Uma conta foi desconectada.
+4647	O usuário iniciou logoff.
+4624-4634
+
+Subcategoria: Eventos RPC
+
+ID	Mensagem
+5712	Foi tentada uma Remote Procedure Call (RPC).
+
+512 - Windows NT está iniciando
+513 - O Windows está sendo desligado
+514 - Um pacote de autenticação foi carregado pela autoridade de segurança local
+515 - Um processo de logon confiável foi registrado com a autoridade de segurança local
+4608 - Windows está sendo inicializado
+4609 - O Windows está sendo desligado
+528 - Logon com êxito
+529 - Falha de logon - nome de usuário desconhecido ou senha inválida
+530 - Falha de logon - tempo de logon Conta restrição violação
+531 - Falha de logon - Conta desativada atualmente
+532 - Falha de logon - A conta de usuário especificada expirou
+533 - Falha de logon - O usuário não autorizado a efetuar logon no computador
+534 - Falha de logon - O usuário não recebeu o tipo de logon solicitado neste computador
+535 - Falha de logon - A senha da conta especificada expirou
+536 - Falha de logon - O componente NetLogon não está ativo
+537 - Falha de logon - A tentativa de logon falhou por outros motivos.
+538 - Usuário Logoff
+539 - Falha de logon - Conta bloqueada
+540 - Logon de rede de sucesso
+551 - Iniciou logoff do usuário
+
+642 - Conta de Usuário Alterou
+643 - Política domínio alterado
+644 - User Account Locked Out
+645 - Conta de computador criado
+646 - Conta de Computador Alterou
+647 - Conta de Computador Deleted
+
+
+672	Uma permissão de serviço de autenticação (AS) foi emitida e validada com sucesso.
+673	Foi concedida uma permissão ao serviço de concessão de permissão (TGS).
+674	Um objeto de segurança renovou uma permissão AS ou TGS.
+675	Falha de pré-autenticação. Esse evento é gerado em um centro de distribuição de chaves (KDC) quando um usuário digita uma senha incorreta.
+676	Falha na solicitação da permissão de autenticação. Esse evento não é gerado no Windows XP nem na família Windows Server 2003.
+677	Não foi concedida uma permissão TGS. Esse evento não é gerado no Windows XP nem na família Windows Server 2003.
+678	A conta foi mapeada com sucesso como uma conta do domínio.
+681	Falha de logon. Foi feita uma tentativa de logon na conta do domínio. Esse evento não é gerado no Windows XP nem na família Windows Server 2003.
+682	Um usuário reconectou-se a uma sessão do Terminal Server desconectada.
+683	Um usuário desconectou uma sessão do Terminal Server sem fazer logoff.
+
+coloca tudo de uma vez:
+4624-4634,673,674,675,676,677,678,681,682,683
+
+Falhas de hardware
+eventos com o ID 15, 11 e 7, faça backup e considere comprar um novo HD.
+
+
+
+---- configurando:
+gpedit.msc
+Habilite a auditoria de logon
+ Diretiva Computador Local -> Configuração do computador -> Configurações do Windows -> Configurações de Segurança -> Diretivas locais -> Diretiva de auditoria.
+Clique duas vezes na definição de Auditoria de Eventos de logon no painel da direita para ajustar suas opções. Na janela de propriedades, ative a caixa de seleção Êxito para registrar logons bem sucedidos. Você também pode ativar a caixa de seleção Falha para registrar logins que falharam.

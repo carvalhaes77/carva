@@ -1,0 +1,2 @@
+[JUPITER]
+pressione Ctrl A para selecionar tudo e em seguida Ctrl ; para comentar. Para retirar os comentários basta usar Ctrl ; de novo.
