@@ -1,0 +1,46 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Flakeyguide",
+			"Gilded Bedrock - gildedbedrock.com",
+			"Tau"
+		]
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			21,
+			101
+		],
+		"uuid": "aac903f4-effb-4a7f-a147-a9e72b0e3baa",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "aa9c49d8-8cac-4691-aab8-29f609d67daa",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "aaeb6089-e159-400f-a8a3-bb27c28dffaa",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

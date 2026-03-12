@@ -1,0 +1,48 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Ever feel lonely in your world? This pack fills the void with AI that mimic real players, from friendly greetings to intense PvP, creating the echo of a bustling multiplayer server.",
+    "name": "Echoes of Multiplayer BP Beta0.3.2",
+    "uuid": "67e4229a-66b4-43fc-bb11-f6c977c02574",
+    "version": [
+      0,
+      3,
+      2
+    ],
+    "min_engine_version": [ 1, 21, 80 ]
+  },
+  "modules": [
+    {
+      "description": "Echoes of Multiplayer BP Beta0.3.2",
+      "type": "data",
+      "uuid": "0f0d9049-aa66-4c3c-b0a9-ece065ed937d",
+      "version": [
+        0,
+        3,
+        2
+      ]
+    },
+	{
+            "description": "Newb Namer Script",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "d32b4f87-e787-428c-8012-929caae4bc9b",
+            "version": [0, 3, 2],
+            "entry": "scripts/newb_namer.js"
+    }
+  ],
+  "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.6.0-beta"
+        },
+        {
+    "module_name": "@minecraft/server-ui",
+    "version": "2.0.0"
+},
+        {
+      "uuid": "ba605009-0985-4c2d-99bc-c744a77e36c6",
+      "version": [ 0, 3, 2 ]
+    }
+    ]
+}

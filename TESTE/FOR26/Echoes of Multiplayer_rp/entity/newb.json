@@ -1,0 +1,128 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zps:newb",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "tx01": "textures/entity/AIplayers/steve",
+        "tx02": "textures/entity/AIplayers/tx02",
+"tx03": "textures/entity/AIplayers/tx03",
+"tx04": "textures/entity/AIplayers/tx04",
+"tx05": "textures/entity/AIplayers/tx05",
+"tx06": "textures/entity/AIplayers/tx06",
+"tx07": "textures/entity/AIplayers/tx07",
+"tx08": "textures/entity/AIplayers/tx08",
+"tx09": "textures/entity/AIplayers/tx09",
+"tx10": "textures/entity/AIplayers/tx10",
+"tx11": "textures/entity/AIplayers/tx11",
+"tx12": "textures/entity/AIplayers/tx12",
+"tx13": "textures/entity/AIplayers/tx13",
+"tx14": "textures/entity/AIplayers/tx14",
+"tx15": "textures/entity/AIplayers/tx15",
+"tx16": "textures/entity/AIplayers/tx16",
+"tx17": "textures/entity/AIplayers/tx17",
+"tx18": "textures/entity/AIplayers/tx18",
+"tx19": "textures/entity/AIplayers/tx19",
+"tx20": "textures/entity/AIplayers/tx20",
+"tx21": "textures/entity/AIplayers/tx21",
+"tx22": "textures/entity/AIplayers/tx22",
+"tx23": "textures/entity/AIplayers/tx23",
+"tx24": "textures/entity/AIplayers/tx24",
+"tx25": "textures/entity/AIplayers/tx25",
+"tx26": "textures/entity/AIplayers/tx26",
+"tx27": "textures/entity/AIplayers/tx27",
+"tx28": "textures/entity/AIplayers/tx28",
+"tx29": "textures/entity/AIplayers/tx29",
+"tx30": "textures/entity/AIplayers/tx30",
+"tx31": "textures/entity/AIplayers/tx31",
+"tx32": "textures/entity/AIplayers/tx32",
+"tx33": "textures/entity/AIplayers/tx33",
+"tx34": "textures/entity/AIplayers/tx34",
+"tx35": "textures/entity/AIplayers/tx35",
+"tx36": "textures/entity/AIplayers/tx36",
+"tx37": "textures/entity/AIplayers/tx37",
+"tx38": "textures/entity/AIplayers/tx38"
+      },
+      "geometry": {
+        "default": "geometry.humanoidaaa"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ]
+      },
+      "animations": {
+        "look_at_target_default": "animation.humanoid.look_at_target.default",
+        "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+        "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+        "move": "animation.humanoid.move",
+        "riding.arms": "animation.humanoid.riding.arms",
+        "riding.legs": "animation.humanoid.riding.legs",
+        "holding": "animation.humanoid.holding",
+        "brandish_spear": "animation.humanoid.brandish_spear",
+        "charging": "animation.humanoid.charging",
+        "attack.rotations": "animation.humanoid.attack.rotations",
+        "sneaking": "animation.humanoid.sneakinga",
+        "bob": "animation.humanoid.bob",
+        "swimming": "animation.humanoid.swimming",
+        "use_item_progress": "animation.humanoid.use_item_progress",
+        "bow_and_arrow": "animation.humanoid.bow_and_arrow",
+        "eat_item_custom": "animation.zps_newb.eat_item_custom",
+        "set_block": "animation.humanoid.set_block",
+        "blocking": "animation.player.shield_block_off_hand"
+      },
+      "animation_controllers": [
+        {
+          "look_at_target": "controller.animation.humanoid.look_at_target"
+        },
+        {
+          "bow_and_arrow": "controller.animation.humanoid.bow_and_arrow"
+        },
+        {
+          "move": "controller.animation.humanoid.move"
+        },
+        {
+          "riding": "controller.animation.humanoid.riding"
+        },
+        {
+          "holding": "controller.animation.humanoid.holding"
+        },
+        {
+          "brandish_spear": "controller.animation.humanoid.brandish_spear"
+        },
+        {
+          "charging": "controller.animation.humanoid.charging"
+        },
+        {
+          "attack": "controller.animation.humanoid.attack"
+        },
+        {
+          "sneaking": "controller.animation.humanoid.sneaking"
+        },
+        {
+          "bob": "controller.animation.humanoid.bob"
+        },
+        {
+          "swimming": "controller.animation.humanoid.swimming"
+        },
+        {
+          "use_item_progress": "controller.animation.humanoid.use_item_progress"
+        },
+        {
+          "blocking": "controller.animation.newb.shield_block"
+        }
+      ],
+      "spawn_egg": {
+        "texture": "zps:newb",
+        "texture_index": 0
+      },
+      "render_controllers": [
+        "controller.render.aiplayer"
+      ],
+      "enable_attachables": true
+    }
+  }
+}

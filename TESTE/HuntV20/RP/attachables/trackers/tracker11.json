@@ -1,0 +1,76 @@
+/*
+Original Creator - Gilded Bedrock at https://gildedbedrock.com
+made by flakeyguide, a part of gildedbedrock (hi there :D )
+
+
+(Hey, you... yeah you! Wait a sec, read through this before you select it all and delete it…. Please…. Some of its funny if your in the mood)
+
+Hello, thanks for downloading this pack! Weird to see you snooping in the code :) dont worry, i didnt obfuscate it or anything lol
+Actually, i dont care, as long as you credit this,
+yeah, i know it sounds annoying, sorry, but please just add a link to the gildedbedrock.com dl page plz. 
+Oh, and if you found this on some weird direct link not on gildedbedrock.com, they pirated it, which really hurts creators, 
+so you could like, report their website or something, idk how that works
+If your gonna do a yt review or something, please include a link to the dl page, and dont just send a direct link. 
+Its expensive to rent server time for a website, and (like you if youre a yt god) ads support us
+
+This took quite awhile to make, but it is a pretty good way to animate an item, 
+and also for custom compasses, canceling the item swap animation is helpful too, (but it doesnt work when sneaking MOJANG!!!) i have no idea why, i couldnt figure it out
+
+Use this code for whatever you want, but i would really appreciate it if you ---> credit us <---
+If you really make some cash from an addon heavily based on this *very clean* and useful code, 
+a donation would really be appreciated, hopefully i remember to add a link here —> .
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Support Us without paying a dime :) Secret below XD
+
+Dont tell google i said this plz, but if you click an ad on https://gildedbedrock.com, 
+it can give us like 20cents, which actually helps way more than you think…
+(especially if every person who peeks at this code clicks one lol, infinite money $$). 
+This is a really great way to support us, but dont do it too much or google will get sus of us. 
+(and dont let google know i told you this)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*/
+
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "hunt:tracker11",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/items/tracker/tracker_11",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.item"
+			},
+			"animations": {
+				"first_person": "animation.first_person",
+				"third_person": "animation.third_person",
+				"item_swap": "animation.player.first_person.swap_item"
+			},
+			"scripts": {
+				"animate": [
+				{
+					"first_person": "c.is_first_person"
+				},
+				{
+					"third_person": "!c.is_first_person"
+				},
+				{
+					"item_swap": "false"
+				}
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

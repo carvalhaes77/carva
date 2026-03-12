@@ -1,0 +1,10 @@
+action.interact.ask=询问
+action.interact.give=给予
+action.interact.chuanshang=穿上
+action.interact.tuoxia=脱下
+action.interact.suoding=锁定
+action.interact.jiechu=解除
+entity.zbw:newb.name=玩家
+item.spawn_egg.entity.zps:newb.name=生成 玩家
+item.zps:friend_list_opener=好友列表
+item.zps:friend_offer=好友申请

@@ -1,0 +1,57 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Flakeyguide",
+			"Gilded Bedrock - gildedbedrock.com"
+		],
+		"product_type": "addon"
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			21,
+			101
+		],
+		"uuid": "aaeb6089-e159-400f-a8a3-bb27c28dffaa",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "aa8350a3-5c75-4876-ba93-32be7e2e76aa",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "aa624d85-10da-4d74-ba9e-442f12dcc1aa",
+			"entry": "scripts/main.js",
+			"version": "1.19.0"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "aac903f4-effb-4a7f-a147-a9e72b0e3baa",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.1.0"
+		}
+	]
+}

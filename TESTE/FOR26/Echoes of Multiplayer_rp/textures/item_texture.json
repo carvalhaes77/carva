@@ -1,0 +1,15 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+     "zps:newb": {
+      "textures": "textures/items/egg/zps_newb"
+    },
+    "friend_list_opener": {
+      "textures": "textures/items/friends"
+    },
+    "friend_offer": {
+      "textures": "textures/items/friend_offer"
+    }
+  }
+}

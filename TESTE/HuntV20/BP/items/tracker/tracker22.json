@@ -1,0 +1,18 @@
+{
+	"format_version": "1.20.20",
+	"minecraft:item": {
+		"description": {
+			"identifier": "hunt:tracker22"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "tracker22"
+			},
+			
+			"minecraft:allow_off_hand": false,
+			"minecraft:creative_category": {
+				"parent":"items"
+			}
+		}
+	}
+}

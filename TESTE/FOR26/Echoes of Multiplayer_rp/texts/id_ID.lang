@@ -1,0 +1,10 @@
+action.interact.ask=Tanya
+action.interact.give=Beri
+action.interact.chuanshang=Pakai
+action.interact.tuoxia=Lepas
+action.interact.suoding=Kunci
+action.interact.jiechu=Buka Kunci
+entity.zbw:newb.name=Pemain
+item.spawn_egg.entity.zps:newb.name=Munculkan Pemain
+item.zps:friend_list_opener=Daftar teman
+item.zps:friend_offer=Permintaan pertemanan

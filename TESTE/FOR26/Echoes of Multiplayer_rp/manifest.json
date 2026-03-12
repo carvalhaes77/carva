@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Echoes of Multiplayer RP Beta0.3.2",
+    "name": "Echoes of Multiplayer RP Beta0.3.2",
+    "uuid": "ba605009-0985-4c2d-99bc-c744a77e36c6",
+    "version": [ 0, 3, 2 ],
+    "min_engine_version": [ 1, 20, 30 ]
+  },
+  "modules": [
+    {
+      "description": "Resource Pack Resources",
+      "type": "resources",
+      "uuid": "3401a1ec-c478-497d-9c76-2088b0dece96",
+      "version": [ 0, 3, 2 ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "67e4229a-66b4-43fc-bb11-f6c977c02574",
+      "version": [ 0, 3, 2 ]
+    }
+  ]
+}

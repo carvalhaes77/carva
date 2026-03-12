@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "hunt:tracker13",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/items/tracker/tracker_13",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.item"
+			},
+			"animations": {
+				"first_person": "animation.first_person",
+				"third_person": "animation.third_person",
+				"item_swap": "animation.player.first_person.swap_item"
+			},
+			"scripts": {
+				"animate": [
+				{
+					"first_person": "c.is_first_person"
+				},
+				{
+					"third_person": "!c.is_first_person"
+				},
+				{
+					"item_swap": "false"
+				}
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

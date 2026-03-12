@@ -1,0 +1,166 @@
+{
+	"resource_pack_name": "Hunt WIP",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"tracker1": {
+			"textures": [
+				"textures/items/tracker/tracker_01"
+			]
+		},
+		"tracker2": {
+			"textures": [
+				"textures/items/tracker/tracker_02"
+			]
+		},
+		"tracker3": {
+			"textures": [
+				"textures/items/tracker/tracker_03"
+			]
+		},
+		"tracker4": {
+			"textures": [
+				"textures/items/tracker/tracker_04"
+			]
+		},
+		"tracker5": {
+			"textures": [
+				"textures/items/tracker/tracker_05"
+			]
+		},
+		"tracker6": {
+			"textures": [
+				"textures/items/tracker/tracker_06"
+			]
+		},
+		"tracker7": {
+			"textures": [
+				"textures/items/tracker/tracker_07"
+			]
+		},
+		"tracker8": {
+			"textures": [
+				"textures/items/tracker/tracker_08"
+			]
+		},
+		"tracker9": {
+			"textures": [
+				"textures/items/tracker/tracker_09"
+			]
+		},
+		"tracker10": {
+			"textures": [
+				"textures/items/tracker/tracker_10"
+			]
+		},
+		"tracker11": {
+			"textures": [
+				"textures/items/tracker/tracker_11"
+			]
+		},
+		"tracker12": {
+			"textures": [
+				"textures/items/tracker/tracker_12"
+			]
+		},
+		"tracker13": {
+			"textures": [
+				"textures/items/tracker/tracker_13"
+			]
+		},
+		"tracker14": {
+			"textures": [
+				"textures/items/tracker/tracker_14"
+			]
+		},
+		"tracker15": {
+			"textures": [
+				"textures/items/tracker/tracker_15"
+			]
+		},
+		"tracker16": {
+			"textures": [
+				"textures/items/tracker/tracker_16"
+			]
+		},
+		"tracker17": {
+			"textures": [
+				"textures/items/tracker/tracker_17"
+			]
+		},
+		"tracker18": {
+			"textures": [
+				"textures/items/tracker/tracker_18"
+			]
+		},
+		"tracker19": {
+			"textures": [
+				"textures/items/tracker/tracker_19"
+			]
+		},
+		"tracker20": {
+			"textures": [
+				"textures/items/tracker/tracker_20"
+			]
+		},
+		"tracker21": {
+			"textures": [
+				"textures/items/tracker/tracker_21"
+			]
+		},
+		"tracker22": {
+			"textures": [
+				"textures/items/tracker/tracker_22"
+			]
+		},
+		"tracker23": {
+			"textures": [
+				"textures/items/tracker/tracker_23"
+			]
+		},
+		"tracker24": {
+			"textures": [
+				"textures/items/tracker/tracker_24"
+			]
+		},
+		"tracker25": {
+			"textures": [
+				"textures/items/tracker/tracker_25"
+			]
+		},
+		"tracker26": {
+			"textures": [
+				"textures/items/tracker/tracker_26"
+			]
+		},
+		"tracker27": {
+			"textures": [
+				"textures/items/tracker/tracker_27"
+			]
+		},
+		"tracker28": {
+			"textures": [
+				"textures/items/tracker/tracker_28"
+			]
+		},
+		"tracker29": {
+			"textures": [
+				"textures/items/tracker/tracker_29"
+			]
+		},
+		"tracker30": {
+			"textures": [
+				"textures/items/tracker/tracker_30"
+			]
+		},
+		"tracker31": {
+			"textures": [
+				"textures/items/tracker/tracker_31"
+			]
+		},
+		"tracker32": {
+			"textures": [
+				"textures/items/tracker/tracker_32"
+			]
+		}
+	}
+}
